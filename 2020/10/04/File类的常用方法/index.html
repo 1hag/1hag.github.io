@@ -20,18 +20,20 @@
     var CONFIG = {"hostname":"1hag.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="集合&lt;一&gt;">
-<meta property="og:url" content="http://1hag.github.io/2020/09/28/%E9%9B%86%E5%90%88-%E4%B8%80/index.html">
+  <meta name="description" content="介绍java.io.File类的常用方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="File类的常用方法">
+<meta property="og:url" content="http://1hag.github.io/2020/10/04/File%E7%B1%BB%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="1木亢">
+<meta property="og:description" content="介绍java.io.File类的常用方法">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-28T10:35:13.000Z">
-<meta property="article:modified_time" content="2020-09-28T11:09:15.837Z">
+<meta property="article:published_time" content="2020-10-04T12:55:40.000Z">
+<meta property="article:modified_time" content="2020-10-04T13:26:34.539Z">
 <meta property="article:author" content="1hag">
-<meta property="article:tag" content="java基础">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://1hag.github.io/2020/09/28/%E9%9B%86%E5%90%88-%E4%B8%80/">
+<link rel="canonical" href="http://1hag.github.io/2020/10/04/File%E7%B1%BB%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
 
 
 <script id="page-configurations">
@@ -44,7 +46,7 @@
   };
 </script>
 
-  <title>集合<一> | 1木亢</title>
+  <title>File类的常用方法 | 1木亢</title>
   
 
 
@@ -179,7 +181,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://1hag.github.io/2020/09/28/%E9%9B%86%E5%90%88-%E4%B8%80/">
+    <link itemprop="mainEntityOfPage" href="http://1hag.github.io/2020/10/04/File%E7%B1%BB%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/author.jpg">
@@ -192,7 +194,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          集合<一>
+          File类的常用方法
         </h1>
 
         <div class="post-meta">
@@ -203,7 +205,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-09-28 18:35:13 / 修改时间：19:09:15" itemprop="dateCreated datePublished" datetime="2020-09-28T18:35:13+08:00">2020-09-28</time>
+              <time title="创建时间：2020-10-04 20:55:40 / 修改时间：21:26:34" itemprop="dateCreated datePublished" datetime="2020-10-04T20:55:40+08:00">2020-10-04</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -231,8 +233,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/09/28/%E9%9B%86%E5%90%88-%E4%B8%80/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/09/28/%E9%9B%86%E5%90%88-%E4%B8%80/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/10/04/File%E7%B1%BB%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/10/04/File%E7%B1%BB%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -242,7 +244,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -251,6 +253,7 @@
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               <span>1 分钟</span>
             </span>
+            <div class="post-description">介绍java.io.File类的常用方法</div>
 
         </div>
       </header>
@@ -261,7 +264,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <h2 id="File类"><a href="#File类" class="headerlink" title="File类"></a>File类</h2><blockquote>
+<p><strong>File是文件和目录路径名的抽象表示，和四大家族没有关系</strong></p>
+</blockquote>
+<h3 id="File的常用方法"><a href="#File的常用方法" class="headerlink" title="File的常用方法"></a>File的常用方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.study.yh.IOTest;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.text.SimpleDateFormat;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FileT</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        File ff=<span class="keyword">new</span> File(<span class="string">&quot;D:\\idea_java\\SomeWork\\src\\com\\study\\yh\\Exception2.java&quot;</span>);</span><br><span class="line">        File f=<span class="keyword">new</span> File(<span class="string">&quot;D:/idea_java/SomeWork/src/com/study/yh&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(!ff.exists())&#123;<span class="comment">//判断是否存在f这个File对象</span></span><br><span class="line"><span class="comment">//            try &#123;</span></span><br><span class="line"><span class="comment">//                f.createNewFile();//若不存在，则以文件的形式创建f这个File对象</span></span><br><span class="line"><span class="comment">//            &#125; catch (IOException e) &#123;</span></span><br><span class="line"><span class="comment">//                e.printStackTrace();</span></span><br><span class="line"><span class="comment">//            &#125;</span></span><br><span class="line">            ff.mkdir();<span class="comment">//若不存在，则以目录的形式创建该File对象</span></span><br><span class="line">            <span class="comment">//f.mkdirs();//创建多重目录</span></span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(f.getParent());<span class="comment">//获取父目录，若没有则返回null</span></span><br><span class="line">        System.out.println(ff.getAbsolutePath());<span class="comment">//获取绝对路径</span></span><br><span class="line">        System.out.println(f.getName());<span class="comment">//获取文件名</span></span><br><span class="line">        System.out.println(f.isDirectory());<span class="comment">//判断是否是目录</span></span><br><span class="line">        System.out.println(f.isFile());<span class="comment">//判断是否是文件</span></span><br><span class="line">        <span class="comment">//获取文件最后一次修改时间</span></span><br><span class="line">        <span class="keyword">long</span> l=ff.lastModified();<span class="comment">//获取最后一次修改从1970的毫秒数</span></span><br><span class="line">        Date date=<span class="keyword">new</span> Date(l);</span><br><span class="line">        SimpleDateFormat sdf=<span class="keyword">new</span> SimpleDateFormat(<span class="string">&quot;yyyy-MM-dd HH:mm:ss SSS&quot;</span>);</span><br><span class="line">        String time =sdf.format(date);</span><br><span class="line">        System.out.println(time);</span><br><span class="line"></span><br><span class="line">        System.out.println(ff.length());<span class="comment">//获取文件的字节大小</span></span><br><span class="line">        File[] fs=f.listFiles();<span class="comment">//获取该目录下的所有子目录</span></span><br><span class="line">        <span class="keyword">for</span>(File fff:fs)&#123;</span><br><span class="line">            System.out.println(fff.getAbsolutePath());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
     </div>
 
     
@@ -285,7 +293,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://1hag.github.io/2020/09/28/%E9%9B%86%E5%90%88-%E4%B8%80/" title="集合&lt;一&gt;">http://1hag.github.io/2020/09/28/集合-一/</a>
+    <a href="http://1hag.github.io/2020/10/04/File%E7%B1%BB%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/" title="File类的常用方法">http://1hag.github.io/2020/10/04/File类的常用方法/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -296,7 +304,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag"><i class="fa fa-tag"></i># java基础</a>
+              <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i># java</a>
           </div>
 
         
@@ -305,13 +313,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/09/26/%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E6%9D%83%E9%99%90/" rel="prev" title="访问控制权限">
-      <i class="fa fa-chevron-left"></i> 访问控制权限
+    <a href="/2020/10/04/%E6%B5%81%E4%B9%8B%E6%96%87%E4%BB%B6%E4%B8%93%E5%B1%9E%E6%B5%81/" rel="prev" title="流之文件专属流">
+      <i class="fa fa-chevron-left"></i> 流之文件专属流
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/10/04/java%E9%9B%86%E5%90%88%E6%80%BB%E7%BB%93/" rel="next" title="java集合总结">
-      java集合总结 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -371,6 +376,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#File%E7%B1%BB"><span class="nav-number">1.</span> <span class="nav-text">File类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#File%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">File的常用方法</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

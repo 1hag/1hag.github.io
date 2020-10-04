@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://amzimg.com/2020/10/04/219184d77d496.png">
 <meta property="og:image" content="https://api2.mubu.com/v3/document_image/5a1f9330-857d-4ada-ae5e-9528515259aa-3023882.jpg">
 <meta property="article:published_time" content="2020-10-04T05:52:29.000Z">
-<meta property="article:modified_time" content="2020-10-04T07:34:59.286Z">
+<meta property="article:modified_time" content="2020-10-04T12:22:14.473Z">
 <meta property="article:author" content="1hag">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -131,7 +131,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档<span class="badge">6</span></a>
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档<span class="badge">7</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -209,7 +209,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-10-04 13:52:29 / 修改时间：15:34:59" itemprop="dateCreated datePublished" datetime="2020-10-04T13:52:29+08:00">2020-10-04</time>
+              <time title="创建时间：2020-10-04 13:52:29 / 修改时间：20:22:14" itemprop="dateCreated datePublished" datetime="2020-10-04T13:52:29+08:00">2020-10-04</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -248,7 +248,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>6.4k</span>
+              <span>6.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -271,7 +271,7 @@
         <h2 id="Java集合的继承关系图"><a href="#Java集合的继承关系图" class="headerlink" title="Java集合的继承关系图"></a>Java集合的继承关系图</h2><blockquote>
 <p>集合可以分成以单个方式存储元素的Collection接口类和以键值对方式存储的Map接口类。</p>
 </blockquote>
-<h3 id="Collection-接口的继承关系图"><a href="#Collection-接口的继承关系图" class="headerlink" title="Collection 接口的继承关系图"></a><strong>Collection</strong> 接口的继承关系图</h3><p><img src="https://amzimg.com/2020/10/04/07a66694cb597.png" alt="Collection.png"></p>
+<h3 id="Collection-接口的继承关系图"><a href="#Collection-接口的继承关系图" class="headerlink" title="Collection 接口的继承关系图"></a><strong><em>Collection</em></strong> 接口的继承关系图</h3><p><img src="https://amzimg.com/2020/10/04/07a66694cb597.png" alt="Collection.png"></p>
 <p><strong><em>Collection 接口下的所有集合都实现了Iterator接口，可以迭代！</em></strong></p>
 <p><strong><em>其中List有序可重复，Set无序不可重复！</em></strong></p>
 <blockquote>
@@ -390,6 +390,17 @@
 </ul>
 </li>
 </ul>
+<pre><code>自平衡二叉树遵循左小右大原则存放
+
+遍历方法：
+
+- 前序：根左右
+
+- 中序：左根右
+
+- 后序：左右根
+
+TreeSet/TreeMap采用：中序遍历方式；Iterator迭代器采用中序遍历；</code></pre>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.study.yh.TreeTest;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TreeSetTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//创建对象</span></span><br><span class="line">        Set&lt;Vip&gt; set=<span class="keyword">new</span> TreeSet(<span class="keyword">new</span> Comparator&lt;Vip&gt;() &#123;</span><br><span class="line">            <span class="meta">@Override</span><span class="comment">//通过实现匿名内部类比较器Comparator进行比较</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Vip o1, Vip o2)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(o1.age==o2.age)&#123;</span><br><span class="line">                    <span class="keyword">return</span> o1.name.compareTo(o2.name);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> o1.age-o2.age;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        Vip v1=<span class="keyword">new</span> Vip(<span class="number">1</span>,<span class="string">&quot;yi&quot;</span>);</span><br><span class="line">        Vip v2=<span class="keyword">new</span> Vip(<span class="number">1</span>,<span class="string">&quot;hang&quot;</span>);</span><br><span class="line">        Vip v3=<span class="keyword">new</span> Vip(<span class="number">3</span>,<span class="string">&quot;yi&quot;</span>);</span><br><span class="line">        Vip v4=<span class="keyword">new</span> Vip(<span class="number">2</span>,<span class="string">&quot;hu&quot;</span>);</span><br><span class="line">        <span class="comment">//添加元素</span></span><br><span class="line"></span><br><span class="line">        set.add(v1);</span><br><span class="line">        set.add(v2);</span><br><span class="line">        set.add(v3);</span><br><span class="line">        set.add(v4);</span><br><span class="line">        <span class="comment">//遍历集合</span></span><br><span class="line">        <span class="keyword">for</span> (Vip v:set)&#123;</span><br><span class="line">            System.out.println(v);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//通过实现Comparable接口实现对自定义类型的比较</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Vip</span> <span class="keyword">implements</span> <span class="title">Comparable</span>&lt;<span class="title">Vip</span>&gt;</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    String name;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Vip</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Vip</span><span class="params">(<span class="keyword">int</span> age, String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Vip&#123;&quot;</span> +</span><br><span class="line">                <span class="string">&quot;age=&quot;</span> + age +</span><br><span class="line">                <span class="string">&quot;, name=&#x27;&quot;</span> + name + <span class="string">&#x27;\&#x27;&#x27;</span> +</span><br><span class="line">                <span class="string">&#x27;&#125;&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//重写compareTo方法</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compareTo</span><span class="params">(Vip o)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>.age==o.age)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.name.compareTo(o.name);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.age-o.age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span> == o) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (o == <span class="keyword">null</span> || getClass() != o.getClass()) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        Vip vip = (Vip) o;</span><br><span class="line">        <span class="keyword">return</span> age == vip.age &amp;&amp;</span><br><span class="line">                Objects.equals(name, vip.name);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Objects.hash(age, name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -527,7 +538,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -580,12 +591,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">11k</span>
+    <span title="站点总字数">12k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">10 分钟</span>
+    <span title="站点阅读时长">11 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
